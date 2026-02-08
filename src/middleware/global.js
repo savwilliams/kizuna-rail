@@ -8,7 +8,11 @@ const setLocalVariables = (req, res, next) => {
     // Make any query parameters available to all templates
     res.locals.query = req.query;
 
+    // Set the logo tooltip text for all pages
+    res.locals.logoTooltip = 'Click on logo to retun to homepage';
+    
     next();
+        
 };
 
 export default setLocalVariables;
