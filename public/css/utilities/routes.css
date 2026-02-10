@@ -1,3 +1,39 @@
+.filters-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    align-items: end;
+    max-width: 1200px;
+    margin: 0 auto var(--space-xl);
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.filter-group--region {
+    justify-self: center;
+}
+
+.filter-group--season {
+    justify-self: center;
+}
+
+.filters-grid label {
+    font-weight: 600;
+    color: var(--clr-text-primary);
+}
+
+.filters-grid select {
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--clr-border, #ccc);
+    font-size: 1rem;
+    min-width: 12rem;
+}
+
 .routes-grid {
     display: flex;
     flex-direction: column;
