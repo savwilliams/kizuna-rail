@@ -406,14 +406,65 @@ article.confirmation-page {
 }
 
 @media print {
-    article.confirmation-page {
-        .confirmation-actions {
-            display: none;
-        }
-
-        .confirmation-header {
-            background-color: white;
-            border: 2px solid var(--clr-primary);
-        }
+    header,
+    nav,
+    footer,
+    .confirmation-actions,
+    .btn,
+    .logo,
+    .site-header,
+    .site-footer {
+      display: none !important;
     }
+  
+    @page {
+      margin: 0;
+    }
+  
+    * {
+      margin: 0 !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+  
+    article.confirmation-page {
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 1.1;
+    }
+  
+    .confirmation-header,
+    .booking-reference,
+    .confirmation-content,
+    .booking-details .details-grid,
+    .detail-card,
+    .passenger-info-card,
+    .important-info,
+    .passenger-details,
+    .passenger-detail,
+    .next-steps .steps-list,
+    .next-steps .step-item,
+    .next-steps .step-title,
+    .next-steps .step-description,
+    .important-info .info-title,
+    .important-info .info-list,
+    .important-info .info-list li {
+      margin: 0 !important;
+      padding: 0 !important;
+      gap: 0 !important;
+    }
+  
+    .next-steps .step-description,
+    .important-info .info-list {
+      line-height: 1.05 !important;
+    }
+   
+    .passenger-info-card .passenger-details {
+      padding-left: 8px !important;  
+    }
+   
+    .passenger-detail {
+      flex: 1 1 45% !important;
+    }
+  
 }
